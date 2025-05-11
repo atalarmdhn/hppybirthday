@@ -1,0 +1,130 @@
+/* customizable snowflake styling */
+.loader button {
+    width: 50%;
+    height: 100px;
+    position: fixed;
+    left: 50%;
+    top: 45%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    background: center no-repeat #fff;
+    z-index: 9999999999999999999999;
+    font-size: 50px;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    border-radius: .3em;
+    text-transform: uppercase;
+    box-shadow: 0 3px 6px rgba(19, 138, 88, 0.16), 0 3px 6px rgba(110, 80, 20, .4),
+        inset 0 -2px 5px 1px rgb(44, 223, 83),
+        inset 0 -1px 1px 3px rgb(71, 214, 107);
+    background-image: linear-gradient(160deg, #7cdd64, #45cabf, #2c8304, #2bdb48, #54e2ca);
+    border: 1px solid #000000;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 2px 2px rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.golden-btn:focus,
+.golden-btn:hover {
+    background-size: 150% 150%;
+    font: arial;
+    box-shadow: 0 10px 20px rgba(124, 107, 107, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23),
+        inset 0 -2px 5px 1px #a330a7,
+        inset 0 -1px 1px 3px rgb(94, 29, 77);
+    border: 1px solid rgba(7, 23, 165, 0.6);
+    color: rgba(26, 5, 120, 0.8);
+}
+
+.golden-btn:active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(110, 80, 20, .4),
+        inset 0 -2px 5px 1px #1043b1,
+        inset 0 -1px 1px 3px rgb(133, 164, 250);
+}
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    background: url(img/back.png) center no-repeat #000;
+}
+
+.song {
+    display: none;
+}
+
+body {
+    background-color: #58d1ad;
+}
+
+img {
+    width: 100%;
+}
+
+.balloon-border {
+    position: fixed;
+    top: 100%;
+    opacity: 0.5;
+    z-index: 99999999;
+}
+
+.area {
+    text-align: center;
+    font-size: 70px;
+    color: #C4515C;
+    letter-spacing: -7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: spin 2s ease-out infinite;
+    text-shadow: 0px 0px 5px #fff, 0px 0px 7px #fff;
+}
+
+#nae {
+    text-transform: capitalize;
+}
+
+#confetti {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateZ(0);
+    }
+
+    25% {
+        transform: rotateZ(10deg);
+    }
+
+    50% {
+        transform: rotateZ(0deg);
+    }
+
+    75% {
+        transform: rotateZ(-10deg);
+    }
+}
+
+.type-wrap {
+    font-size: 25px;
+    color: #C4515C;
+
+}
+
+.cake {
+    margin-top: 15px; /* Jarak dari teks typing */
+    margin-left: auto; /* Memusatkan elemen */
+    margin-right: auto;
+    text-align: center; /* Memusatkan gambar */
+    display: block; /* Pastikan elemen mengikuti alur normal */
+}
